@@ -1,0 +1,728 @@
+/* Asosiy sozlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    color: #1a1a2e;
+    overflow-x: hidden;
+}
+
+/* Tugmalar */
+.asosiy-tugma {
+    background-color: #3b31f5;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.asosiy-tugma:hover {
+    background-color: #2b21cf;
+}
+
+.qoshimcha-tugma {
+    background-color: white;
+    color: #333;
+    border: none; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.qoshimcha-tugma:hover {
+    color: #3b31f5;
+}
+
+/* Navigatsiya */
+.navigatsiya {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+}
+
+.logotip {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logotip span {
+    color: #ff6b6b;
+}
+
+.nav-havolalar {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-havolalar a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-harakatlar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.telefon-raqam {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5563;
+}
+
+/* Asosiy Qism (Hero) */
+.asosiy-qism {
+    text-align: center;
+    padding: 80px 8% 40px;
+}
+
+.asosiy-qism h1 {
+    font-size: 52px;
+    color: #25255c;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.asosiy-qism p {
+    color: #6b7280;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.asosiy-qism-tugmalari {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.asosiy-rasm img {
+    max-width: 100%;
+    width: 900px;
+    border-radius: 20px;
+}
+
+/* Ishonch Bolimi (Brands) */
+.ishonch-bolimi {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.ishonch-matni {
+    color: #9ca3af;
+    font-size: 14px;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+
+.brend-logotiplari {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.brend {
+    height: 30px; 
+    width: auto;
+    object-fit: contain;
+}
+
+/* Imkoniyatlar Bolimi (Features) */
+.imkoniyatlar-bolimi {
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.bolim-sarlavhasi {
+    color: #1b1b4d;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 70px;
+}
+
+.imkoniyatlar-qutisi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Chap Tomon: Rasmlar Kollaji */
+.rasmlar-kollaji {
+    position: relative;
+    width: 520px;
+    height: 600px;
+}
+
+.odam-qutisi {
+    position: absolute;
+}
+
+.rangli-fon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.odam-rasmi {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+}
+
+.ayol-qutisi {
+    width: 300px;
+    height: 300px;
+    top: 50px;
+    right: 30px;
+    z-index: 2;
+}
+
+.binafsha-fon {
+    background-color: #908ce4;
+}
+
+.ayol-qutisi .odam-rasmi {
+    height: 510px;
+}
+
+.kostyum-qutisi {
+    width: 240px;
+    height: 280px;
+    bottom: 90px;
+    left: 0;
+    z-index: 3;
+}
+
+.sariq-fon {
+    background-color: #f7d488;
+}
+
+.kostyum-qutisi .odam-rasmi {
+    height: 250px;
+    left: 85%;
+}
+
+.soqolli-qutisi {
+    width: 180px;
+    height: 180px;
+    bottom: 0;
+    right: 110px;
+    z-index: 4;
+}
+
+.pushti-fon {
+    background-color: #f0749a;
+}
+
+.soqolli-qutisi .odam-rasmi {
+    height: 240px;
+    left: 45%;
+}
+
+.fon-shakli {
+    position: absolute;
+    z-index: 1;
+}
+
+.aylana {
+    width: 60px;
+    height: 60px;
+    background-color: #fad3d7;
+    border-radius: 50%;
+    bottom: 180px;
+    left: -20px;
+}
+
+.tortburchak {
+    width: 30px;
+    height: 50px;
+    background-color: #bcf2e2;
+    top: 240px;
+    right: 0;
+    border-radius: 3px;
+}
+
+.uchburchak {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid #f9b8c9;
+    bottom: -15px;
+    right: 80px;
+    transform: rotate(20deg);
+    z-index: 5;
+}
+
+/* O'ng Tomon: Ro'yxat */
+.imkoniyatlar-royxati {
+    width: 420px;
+    text-align: left;
+}
+
+.imkoniyat-bandi {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 30px 0;
+}
+
+.ajratuvchi {
+    border: none;
+    border-top: 1px solid #efefef;
+    margin: 0;
+}
+
+.ikonka-qutisi {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ikonka-qutisi img {
+    width: 26px;
+    height: 26px;
+}
+
+.yashil-ikonka {
+    background-color: #bcf2e2;
+}
+
+.zargaldoq-ikonka {
+    background-color: #fcebd1;
+}
+
+.pushti-ikonka {
+    background-color: #fad3d7;
+}
+
+.imkoniyat-matni h3 {
+    color: #1b1b4d;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.imkoniyat-matni p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Galereya Bolimi */
+.galereya-bolimi {
+    background-color: #fffaf0;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.galereya-sarlavhasi {
+    margin-bottom: 60px;
+}
+
+.galereya-sarlavhasi h2 {
+    color: #1a1a4a;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.galereya-sarlavhasi p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.sotib-olish-tugmasi {
+    display: inline-block;
+    background-color: #3b5998;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.sotib-olish-tugmasi:hover {
+    background-color: #2d4373;
+}
+
+.galereya-tori {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.tor-ustuni {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 20%;
+}
+
+.ustun-1 {
+    margin-top: 0;
+}
+
+.ustun-2 {
+    margin-top: 60px;
+}
+
+.ustun-3 {
+    margin-top: -20px;
+}
+
+.ustun-4 {
+    margin-top: 80px;
+}
+
+.ustun-5 {
+    margin-top: -40px;
+}
+
+.galereya-kartasi {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: transparent;
+}
+
+.galereya-kartasi img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Sharhlar Bolimi (Testimonials) */
+.sharhlar-bolimi {
+    padding: 100px 8%;
+    text-align: center;
+    background-color: #f9fafb;
+}
+
+.sharhlar-bolimi h2 {
+    color: #25255c;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+.sharh-kartalari {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.karta {
+    border: 1px solid #f3f4f6;
+    padding: 40px 30px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.karta p {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.foydalanuvchi-malumoti {
+    text-align: center;
+}
+
+.foydalanuvchi-malumoti img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.foydalanuvchi-malumoti h4 {
+    color: #25255c;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.foydalanuvchi-malumoti span {
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+/* Harakatga Chorlov (CTA) */
+.harakatga-chorlov {
+    background-color: #3b31f5;
+    padding: 80px 8%;
+}
+
+.harakat-matni {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.harakatga-chorlov h2 {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1.3;
+}
+
+.harakat-tugmalari {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.oq-tugma {
+    background-color: #ffffff;
+    color: #3b31f5;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.tugma-rasmi {
+    width: 20px;
+    height: auto;
+}
+
+.oq-tugma:hover {
+    background-color: #f3f4f6;
+}
+
+.harakat-tugmalari a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.harakat-tugmalari a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Sayt Podvali (Footer) */
+.sayt-podvali {
+    background-color: #ffffff;
+    padding: 80px 8% 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.podval-yuqorisi {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.podval-brendi p {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 20px;
+    max-width: 300px;
+}
+
+.podval-havolalari h4 {
+    color: #25255c;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.podval-havolalari ul {
+    list-style: none;
+}
+
+.podval-havolalari ul li {
+    margin-bottom: 12px;
+}
+
+.podval-havolalari ul a {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.podval-havolalari ul a:hover {
+    color: #3b31f5;
+}
+
+.ijtimoiy-tarmoq-rasmlari {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.ijtimoiy-tarmoq-rasmlari a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.ijtimoiy-tarmoq-rasmlari a img {
+    width: 20px; 
+    height: auto;
+    display: block;
+}
+
+.ijtimoiy-tarmoq-rasmlari a:hover {
+    opacity: 0.7;
+}
+
+.podval-pasti {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f3f4f6;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.podval-pasti p {
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+.pastki-havolalar {
+    display: flex;
+    gap: 20px;
+}
+
+.pastki-havolalar a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.pastki-havolalar a:hover {
+    color: #3b31f5;
+}
+
+/* Mobil ekranlar uchun moslashuvchanlik */
+@media (max-width: 992px) {
+    .podval-yuqorisi {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imkoniyatlar-qutisi {
+        flex-direction: column;
+    }
+
+    .sharh-kartalari {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .harakat-matni {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .harakat-tugmalari {
+        align-items: center;
+    }
+
+    .podval-yuqorisi {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .podval-brendi p {
+        margin: 20px auto;
+    }
+
+    .ijtimoiy-tarmoq-rasmlari {
+        justify-content: center;
+    }
+
+    .podval-pasti {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brend-logotiplari {
+        gap: 30px;
+    }
+
+    .brend {
+        height: 20px;
+    }
+
+    .galereya-tori {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tor-ustuni {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 0 !important;
+    }
+}
