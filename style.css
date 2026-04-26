@@ -7,6 +7,8 @@
 }
 
 body {
+    min-width: 1200px;
+    overflow-x: hidden;
     color: #1a1a2e;
     overflow-x: hidden;
 }
@@ -680,6 +682,40 @@ body {
 }
 
 @media (max-width: 768px) {
+    /* Navigatsiyani to'g'rilash */
+    .navigatsiya {
+        flex-direction: column; /* Logotip va menyuni ustma-ust qiladi */
+        gap: 15px;
+        padding: 15px 5%;
+    }
+
+    .nav-havolalar {
+        flex-wrap: wrap;    /* Elementlar sig'masa pastga tushadi */
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .nav-harakatlar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Asosiy qism sarlavhasini kichraytirish */
+    .asosiy-qism h1 {
+        font-size: 32px;
+    }
+
+    .asosiy-qism-tugmalari {
+        flex-direction: column; /* Tugmalarni ustma-ust qiladi */
+        align-items: center;
+    }
+
+    .asosiy-rasm img {
+        width: 100%;
+    }
+
+    /* Boshqa mobil sozlamalar */
     .harakat-matni {
         flex-direction: column;
         text-align: center;
@@ -708,11 +744,11 @@ body {
     }
 
     .brend-logotiplari {
-        gap: 30px;
+        gap: 20px;
     }
 
     .brend {
-        height: 20px;
+        height: 18px;
     }
 
     .galereya-tori {
@@ -724,5 +760,25 @@ body {
         width: 100%;
         max-width: 400px;
         margin-top: 0 !important;
+    }
+
+    /* Imkoniyatlar qismidagi rasmlar kollajini moslashtirish */
+    .rasmlar-kollaji {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: static;
+    }
+
+    .odam-qutisi {
+        position: relative;
+        width: 100% !important;
+        height: 250px !important;
+        top: 0 !important;
+        right: 0 !important;
+        left: 0 !important;
+        transform: none !important;
     }
 }
